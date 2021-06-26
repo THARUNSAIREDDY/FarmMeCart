@@ -1,0 +1,17 @@
+{% extends 'html/header.html' %}
+{% block content %}
+{% load static %}
+<style>
+body {
+  background-image: url('https://img.rawpixel.com/s3fs-private/rawpixel_images/website_content/rm21-pd-sasi-03.jpg?w=800&dpr=1&fit=default&crop=default&q=65&vib=3&con=3&usm=15&bg=F4F4F3&ixlib=js-2.2.1&s=cec9b4798fd70605e2a95fa61259c5db');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+</style>
+
+
+
+<h3 class="container bg-primary mt-4 text-white mt-6 p-4 text-center mx-auto"> Your order has sent successfully..!</h3>
+<h4 class="text-center">Thank you {{ user.username }} for placing orders :)</h4>
+{% endblock %}
